@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-Kart</title>
+    <link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+       <h3 class="logo">MY<span>cart</span></h3>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a  href="contect.html">Contect</a></li>
+                <li><a class="active" href="kart.html">cart</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header" class="contect-us">
+        <h2 >#Your collection</h2>
+        <h3 >We are here to help you any time. </h3>
+    </section>
+
+    <section id="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button>delete</button></td>
+                    <td><img src="img/shirts/shirt2.jpg" alt=""></td>
+                    <td>men,s shirts for fation and styling</td>
+                    <td>$120</td>
+                    <td><input type="number" value="1"></td>
+                    <td>&120</td>
+                </tr>
+                 <tr>
+                    <td><button>delete</button></td>
+                    <td><img src="img/shoes/shoes2.jpg" alt=""></td>
+                    <td>men,s shoes for fation and styling</td>
+                    <td>$120</td>
+                    <td><input type="number" value="1"></td>
+                    <td>&120</td>
+                </tr>
+                <tr>
+                    <td><button>delete</button></td>
+                    <td><img src="img/buds/bud1.jpg" alt=""></td>
+                    <td>fell music</td>
+                    <td>$600</td>
+                    <td><input type="number" value="1"></td>
+                    <td>&600</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add">
+        <div class="coupon">
+            <h3>APPLY COUPON</h3>
+            <input type="text" placeholder="Enter your code" class="inp">
+            <button class="normal" onclick="call()">Apply</button>
+        </div>
+        <div class="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$840</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                 </tr>
+                 <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="total"><strong><strong>$840</strong></td>
+                 </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="newstext">
+            <h4>sign up for New updates</h4>
+            <p>Get E-mail updates about our latest and <span> special offers. </span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter E-mail">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
+
+    <footer>
+        <h3 class="logo">MY<span>Kart</span></h3>
+        <div>
+            <h3><span>Gmail </span>: Mykarhere111@gmail.com</h3>
+            <h3><span>Phone No.</span> : 98756367489</h3>
+        </div>
+    </footer>
+</body>
+    <script>
+        function call(){
+            const input = document.querySelector(".inp").value;
+            if(input == "badal"){
+        }
+        else{
+            alert(input+" : is invalid code");
+        }
+    }
+    </script>
+</html>
